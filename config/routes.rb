@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  # localhost:3000/index, new
+  resources :posts, only: [:index, :new, :create, :edit, :update, :destroy]
 end
